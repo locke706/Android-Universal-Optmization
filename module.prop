@@ -1,7 +1,7 @@
-id=bpper
-name=Kenzo Build Prop Patcher
-version=v5.9
+id=AUO
+name=Android Universal Optmization
+version=v6.0
 versionCode=1
 author=MakisePurin
-description=A Module to insert tweaks prop to system. 
+description=A Magisk Module to insert tweaks to system.
 minMagisk=1500
