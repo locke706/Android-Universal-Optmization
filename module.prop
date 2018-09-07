@@ -1,0 +1,7 @@
+id=bpper
+name=Kenzo Build Prop Patcher
+version=v5.9
+versionCode=1
+author=MakisePurin
+description=A Module to insert tweaks prop to system. 
+minMagisk=1500
