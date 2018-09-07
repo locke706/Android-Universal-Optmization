@@ -10,7 +10,7 @@ AUTOMOUNT=true
 PROPFILE=true
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=true
+POSTFSDATA=false
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
@@ -37,6 +37,7 @@ print_modname() {
 # Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
+/system/usr/icu
 "
 
 ##########################################################################################
@@ -59,6 +60,8 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm            $MODPATH/system/usr/icu   0   0   0755    u:object_r:system_file:s0
+  set_perm            $MODPATH/system/usr/icu/icudt58l.dat  0   0   0644    u:object_r:system_file:s0
 }
 
 ##########################################################################################
