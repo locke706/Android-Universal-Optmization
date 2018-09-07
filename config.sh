@@ -10,7 +10,7 @@ AUTOMOUNT=true
 PROPFILE=true
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
@@ -22,9 +22,9 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "   Kenzo Build Prop Patcher   "
-  ui_print "*******************************"
+  ui_print "***********************************"
+  ui_print "   Android Universal Optmization   "
+  ui_print "***********************************"
 }
 
 ##########################################################################################
