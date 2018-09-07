@@ -1,4 +1,14 @@
 net.hostname=Amadeus
+# DalvikVM
+dalvik.vm.verify-bytecode=false
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.checkjni=false
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.lockprof.threshold=250
+dalvik.vm.dexopt-flags=m=v,o=y
+dalvik.vm.jmiopts=forcecopy
+# DPI
+ro.sf.lcd_density=400
 # Audio and Video Quality Tweaks
 ro.media.enc.jpeg.quality=100
 ro.camcorder.videoModes=true
@@ -64,7 +74,6 @@ net.tethering.noprovisioning=true
 # IPV4 and IPV6 Support
 persist.telephony.support.ipv6=1
 persist.telephony.support.ipv4=1
-ro.sf.lcd_density=400
 ro.config.ksm=true
 persist.sys.force_highendgfx=true
 # Miscellaneous Tweaks
@@ -96,26 +105,27 @@ ro.telephony.call_ring.delay=0
 ro.lge.proximity.delay=25
 mot.proximity.delay=25
 ro.ril.enable.amr.wideband=1
-# DalvikVM
-dalvik.vm.verify-bytecode=false
-dalvik.vm.execution-mode=int:jit
-dalvik.vm.checkjni=false
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.lockprof.threshold=250
-dalvik.vm.dexopt-flags=m=v,o=y
-dalvik.vm.jmiopts=forcecopy
 # Performance
 debug.performance.tuning=1
 debug.kill_allocating_task=0
 debug.overlayui.enable=1
 hw3d.force=1
 hw2d.force=1
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
 persist.sys.ui.hw=1
 ro.debuggable=1
 ro.config.disable.hw_accel=false
+ro.product.gpu.driver=1
 # End of UPM Tweaks
 # Qualcomm tweaks
 com.qc.hardware=1
 debug.qc.hardware=true
 debug.qctwa.statusbar=1
 debug.qctwa.preservebuf=1
+# Enabled sdcardfs
+ro.sys.sdcardfs=true
+# Disable Kernel Error Checking
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
