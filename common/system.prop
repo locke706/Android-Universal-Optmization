@@ -1,13 +1,4 @@
-# This file will be read by resetprop
-# Example: Change dpi
 net.hostname=Amadeus
-#System tweaks
-#dalvik.vm.heapstartsize=16m
-#dalvik.vm.heapgrowthlimit=128m
-#dalvik.vm.heapsize=256m
-#dalvik.vm.heaptargetutilization=0.84
-#dalvik.vm.heapminfree=4m
-#dalvik.vm.heapmaxfree=8m
 # Audio and Video Quality Tweaks
 ro.media.enc.jpeg.quality=100
 ro.camcorder.videoModes=true
